@@ -9,13 +9,20 @@
     </head>
 
     <body>
-        <div class="container">
-            <video id="video01" src="./assets/videos/bleach-afterdark.mp4"></video>
+        <div
+            onmouseenter="showControl()"
+            onmouseleave="hiddenControl()"
+            class="container"
+        >
+            <video
+                id="video01"
+                src="./assets/videos/bleach-afterdark.mp4"
+            ></video>
 
             <div class="control">
                 <img
                     class="btn"
-                    onclick="backTime()"
+                    onclick="backTime(this)"
                     src="./assets/icons/skip-back.svg"
                 />
                 <img
@@ -43,6 +50,28 @@
                     onclick="stopVideo()"
                     src="./assets/icons/stop.svg"
                 />
+            </div>
+            <div class="info">
+                <h1 id="title">INSTRUÇÕES DAS FUNÇÕES DOS BOTÕES</h1>
+                <p class="btn-info">
+                    Mouse dentro do vídeo os controles aparecem
+                </p>
+                <p class="btn-info">
+                    Mouse fora do vídeo os controles desaparecem
+                </p>
+                <p class="btn-info">Botão 01 -> Back: retorna o vídeo</p>
+                <p class="btn-info">Botão 02 -> Forward: avança o vídeo</p>
+                <p class="btn-info">
+                    Botão 03 -> Back Time: diminui a velocidade de reprodução
+                </p>
+                <p class="btn-info">
+                    Botão 04 -> Foward Time: aumenta a velocidade de reprodução
+                </p>
+                <p class="btn-info">Botão 05 -> Start: inicia o vídeo</p>
+                <p class="btn-info">
+                    Botão 06 -> Stop: para a reprodução e retorna o vídeo para o
+                    início
+                </p>
             </div>
         </div>
     </body>

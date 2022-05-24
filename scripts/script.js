@@ -1,4 +1,14 @@
 let video = document.querySelector("video#video01");
+let control = document.querySelector("div.control");
+let container = document.querySelector("div.container");
+
+function showControl() {
+    control.style.display = "block";
+}
+
+function hiddenControl() {
+    control.style.display = "none";
+}
 
 function backTime() {
     video.currentTime -= 1;
