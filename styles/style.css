@@ -4,7 +4,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url("/assets/images/ichigo.jpg");
+    background-image: url("http://images2.fanpop.com/image/photos/8700000/Ichigo-kurosaki-ichigo-8722913-1024-768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -43,7 +43,7 @@ video#video01 {
 h1#title {
     text-align: center;
     font-size: 26px;
-    color: coral;
+    color:antiquewhite;
 }
 
 .info {
@@ -51,10 +51,10 @@ h1#title {
     margin-top: 20px;
     background-color: rgba(1, 10, 7, 0.315);
     max-width: 640px;
-    border-style: double;
+    border-style:groove;
     border-radius: 5px;
 }
 
 p.btn-info {
-    color: rgb(214, 140, 111);
+    color:aliceblue;
 }
